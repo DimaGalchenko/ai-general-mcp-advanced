@@ -113,8 +113,8 @@ class CustomMCPClient:
         # 1. Check if session is present
         # 2. Send request with method `tools/list`
         # 3. Extract tools from response. See response sample in postman
-        # 4. Return list with dicts with tool schemas. It should be provided according to DIAL specification
-        # https://dialx.ai/dial_api#operation/sendChatCompletionRequest (request -> tools)
+        # 4. Return list with dicts with tool schemas. It should be provided according to OpenAI specification
+        # https://platform.openai.com/docs/guides/function-calling#defining-functions
         raise NotImplementedError()
 
     async def call_tool(self, tool_name: str, tool_args: dict[str, Any]) -> Any:
